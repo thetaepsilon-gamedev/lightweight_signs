@@ -133,7 +133,7 @@ minetest.register_node("lightweight_signs:test", {
 	tiles = { b .. "^lightweight_signs_overlay_plate_border.png", b,b,b,b,b },
 	paramtype = "light",
 	paramtype2 = "facedir",
-	sunlight_propogates = true,
+	sunlight_propagates = true,
 	walkable = true,
 	after_place_node = saner_facedir_place,
 	on_construct = sign_setup,
