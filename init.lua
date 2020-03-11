@@ -127,10 +127,11 @@ end
 
 
 local b = minetest.registered_nodes["default:wood"].tiles[1]
+local f = "((" .. b .. ")^lightweight_signs_overlay_plate_border.png)"
 minetest.register_node("lightweight_signs:test", {
 	drawtype = "nodebox",
 	node_box = plate_box,
-	tiles = { b .. "^lightweight_signs_overlay_plate_border.png", b,b,b,b,b },
+	tiles = { f, b,b,b,b,b },
 	paramtype = "light",
 	paramtype2 = "facedir",
 	sunlight_propagates = true,
