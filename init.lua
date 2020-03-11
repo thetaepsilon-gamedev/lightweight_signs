@@ -140,5 +140,6 @@ minetest.register_node("lightweight_signs:test", {
 	on_construct = sign_setup,
 	groups = { oddly_breakable_by_hand = 1, _mod_lightweight_signs = 1 },
 	on_receive_fields = save_text,
+	inventory_image = f .. "^[mask:lightweight_signs_mask_inventory_plate_x16.png"
 });
 
